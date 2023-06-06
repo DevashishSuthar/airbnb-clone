@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, 
+body,
+:root{
+  height: 100%;
+}
+
+.swiper-button-disabled {
+  opacity: 0 !important;
+}
+
+.swiper-button-prev {
+  left: 0 !important;
+  background-image: url(../assets/images/back.png);
+}
+
+.swiper-button-next {
+  right: 0 !important;
+  background-image: url(../assets/images/next.png);
+}
+
+.swiper-button-prev, .swiper-button-next {
+  top: 35px !important;
+  width: 30px !important;
+  height: 30px !important;
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: center;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  font-size: 25px !important;
+  display: none;
+}
+
+.detail-image{
+  margin-right: 8px;
+  width: calc(50% - 8px);
+}
