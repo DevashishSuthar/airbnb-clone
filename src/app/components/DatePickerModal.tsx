@@ -6,7 +6,7 @@ const DatePickerModal: React.FC = () => {
     const [startDate, setStartDate] = useState(null);
     const [endDate, setEndDate] = useState(null);
 
-    const handleDateChange = (date) => {
+    const handleDateChange = (date: [Date | null, Date | null]): void => {
         console.log('date', date, typeof date);
         // setSelectedDates([...selectedDates, date]);
     };
