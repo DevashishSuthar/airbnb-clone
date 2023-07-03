@@ -97,3 +97,8 @@ export interface PropertyListingData {
         currency: PropertyCurrencyProps;
     }
 }
+
+export interface MapMarkerProps {
+    name: string;
+    coordinates: number[]
+}

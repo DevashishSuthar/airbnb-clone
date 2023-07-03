@@ -7,12 +7,7 @@ import listings from '@/app/static/listings.json';
 import EmptyState from '@/app/components/common/EmptyState';
 import ListingCard from '@/app/components/listings/ListingCard';
 import { AppContext } from '@/app/AppContext';
-import { PropertyListingData } from '@/app/interfaces';
-
-interface MapMarkerProps {
-    name: string;
-    coordinates: number[]
-}
+import { MapMarkerProps, PropertyListingData } from '@/app/interfaces';
 
 const Map = dynamic(() => import('../Map'), {
     ssr: false
