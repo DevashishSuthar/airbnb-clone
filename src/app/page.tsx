@@ -24,9 +24,6 @@ const Home = () => {
   const [mapData, setMapData] = useState<MapMarkerProps[]>([]);
 
   const { data = [] } = listings;
-  if (!data.length) {
-    return <EmptyState />;
-  }
 
   useEffect(() => {
     if (data.length) {
@@ -39,11 +36,15 @@ const Home = () => {
       });
       setMapData(mapMarkerData);
     }
-  }, [data]);
+  }, []);
 
   const handleShowMapClick = () => {
     setIsPropertyOnMapVisible(!isPropertyOnMapVisible);
   };
+
+  if (!data.length) {
+    return <EmptyState />;
+  }
 
   if (location) {
     return (
