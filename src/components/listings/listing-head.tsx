@@ -4,8 +4,8 @@ import { AiFillStar, AiOutlineHeart } from 'react-icons/ai';
 import { FiShare } from 'react-icons/fi';
 import { TbMedal } from 'react-icons/tb';
 
-import MidDot from '@/app/components/common/MidDot';
-import { getUserRatings } from '@/app/utils/CommonUtils';
+import MidDot from '@/components/general/mid-dot';
+import { getUserRatings } from '@/lib/utils';
 
 interface ListingHeadProps {
     title: string;

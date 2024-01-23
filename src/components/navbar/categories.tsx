@@ -6,8 +6,8 @@ import { Navigation, Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import CategoryBox from '@/app/components/CategoryBox';
-import categories from '@/app/static/categories.json';
+import CategoryBox from '@/components/category-box';
+import categories from '@/static/categories.json';
 
 const Categories = () => {
   const params = useSearchParams();

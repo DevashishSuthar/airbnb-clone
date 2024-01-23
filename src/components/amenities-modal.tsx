@@ -3,7 +3,7 @@
 import { IoMdClose } from 'react-icons/io';
 import { TbBrandAirbnb } from 'react-icons/tb';
 
-import { PropertyAmenitiesProps } from '../interfaces';
+import { PropertyAmenitiesProps } from '@/lib/types';
 
 interface AmenitiesModalProps {
     isOpen?: boolean;

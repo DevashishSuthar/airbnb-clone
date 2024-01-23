@@ -3,13 +3,13 @@
 import dynamic from 'next/dynamic';
 import { useEffect, useState, useContext } from 'react';
 
-import listings from '@/app/static/listings.json';
-import EmptyState from '@/app/components/common/EmptyState';
-import ListingCard from '@/app/components/listings/ListingCard';
+import listings from '@/static/listings.json';
+import EmptyState from '@/components/general/empty-state';
+import ListingCard from '@/components/listings/listing-card';
 import { AppContext } from '@/app/AppContext';
-import { MapMarkerProps, PropertyListingData } from '@/app/interfaces';
+import { MapMarkerProps, PropertyListingData } from '@/lib/types';
 
-const Map = dynamic(() => import('../Map'), {
+const Map = dynamic(() => import('../map'), {
     ssr: false
 });
 

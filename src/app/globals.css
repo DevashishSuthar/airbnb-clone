@@ -14,12 +14,12 @@ body,
 
 .swiper-button-prev {
   left: 0 !important;
-  background-image: url(../assets/images/back.png);
+  background-image: url(/images/back.png);
 }
 
 .swiper-button-next {
   right: 0 !important;
-  background-image: url(../assets/images/next.png);
+  background-image: url(/images/next.png);
 }
 
 .swiper-button-prev, .swiper-button-next {

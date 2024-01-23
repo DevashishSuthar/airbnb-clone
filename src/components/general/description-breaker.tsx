@@ -1,10 +1,10 @@
 import { Fragment } from 'react';
 
-interface ContentWithBoldAndLineBreaksProps {
+interface DescriptionBreakerProps {
     content: string;
 }
 
-const ContentWithBoldAndLineBreaks: React.FC<ContentWithBoldAndLineBreaksProps> = ({ content }) => {
+const DescriptionBreaker: React.FC<DescriptionBreakerProps> = ({ content }) => {
     return (
         <>
             {content.split('\n').map((line, lineIndex) => (
@@ -26,4 +26,4 @@ const ContentWithBoldAndLineBreaks: React.FC<ContentWithBoldAndLineBreaksProps> 
     );
 };
 
-export default ContentWithBoldAndLineBreaks;
+export default DescriptionBreaker;

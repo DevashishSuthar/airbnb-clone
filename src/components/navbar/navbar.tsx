@@ -1,9 +1,9 @@
-import Container from '@/app/components/common/Container';
-import Categories from './Categories';
-import Logo from './Logo';
-import Search from './Search';
-import UserMenu from './UserMenu';
-import Filters from './Filters';
+import Container from '@/components/general/container';
+import Categories from './categories';
+import Logo from './logo';
+import Search from './search';
+import UserMenu from './user-menu';
+import Filters from './filters';
 
 const Navbar: React.FC = () => {
   return (

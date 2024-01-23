@@ -5,16 +5,16 @@ import { useContext, useEffect, useState } from 'react';
 import { HiOutlineMap, } from 'react-icons/hi';
 import { HiListBullet } from 'react-icons/hi2';
 
-import ListingCard from "@/app/components/listings/ListingCard";
-import Container from '@/app/components/common/Container';
-import EmptyState from '@/app/components/common/EmptyState';
-import SearchResults from '@/app/components/listings/SearchResults';
+import ListingCard from "@/components/listings/listing-card";
+import Container from '@/components/general/container';
+import EmptyState from '@/components/general/empty-state';
+import SearchResults from '@/components/listings/search-results';
 
-import listings from '@/app/static/listings.json';
+import listings from '@/static/listings.json';
 import { AppContext } from './AppContext';
-import { MapMarkerProps } from '@/app/interfaces';
+import { MapMarkerProps } from '@/lib/types';
 
-const Map = dynamic(() => import('@/app/components/Map'), {
+const Map = dynamic(() => import('@/components/map'), {
   ssr: false
 });
 

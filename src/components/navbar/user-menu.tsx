@@ -4,8 +4,8 @@ import { useCallback, useState } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { useDetectClickOutside } from 'react-detect-click-outside';
 
-import MenuItem from './MenuItem';
-import Avatar from '@/app/components/common/Avatar';
+import MenuItem from './menu-item';
+import Avatar from '@/components/general/avatar';
 
 const UserMenu: React.FC = () => {
     const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
