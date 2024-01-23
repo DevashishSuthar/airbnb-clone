@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
-import { IMG_FILTER } from '@/app/helpers/ImageHelper';
+import { IMG_FILTER } from '@/lib/data';
 
 const Filters = () => {
     const pathname = usePathname();

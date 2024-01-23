@@ -1,4 +1,4 @@
-import GuestCounter from './GuestCounter';
+import GuestCounter from './guest-counter';
 
 const adultsMaxLimit = 16;
 const otherGuestsMaxLimit = 5;

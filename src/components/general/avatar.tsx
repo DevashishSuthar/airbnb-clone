@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { IMG_USER_PROFILE } from '@/app/helpers/ImageHelper';
+import { IMG_USER_PROFILE } from '@/lib/data';
 
 interface AvatarProps {
     src?: string | null | undefined;

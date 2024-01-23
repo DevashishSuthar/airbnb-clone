@@ -5,15 +5,15 @@ import { useEffect, useState } from 'react';
 import { TbBrandAirbnb } from 'react-icons/tb';
 import { CgMenuGridO } from 'react-icons/cg';
 
-import Container from "@/app/components/common/Container";
-import ListingHead from "@/app/components/listings/ListingHead";
-import ListingReservation from '@/app/components/listings/ListingReservation';
-import ContentWithBoldAndLineBreaks from '@/app/components/common/ContentWithBoldAndLineBreaks';
-import AmenitiesModal from '@/app/components/AmenitiesModal';
-import MidDot from '@/app/components/common/MidDot';
-import Avatar from '@/app/components/common/Avatar';
+import Container from "@/components/general/container";
+import ListingHead from "@/components/listings/listing-head";
+import ListingReservation from '@/components/listings/listing-reservation';
+import DescriptionBreaker from '@/components/general/description-breaker';
+import AmenitiesModal from '@/components/amenities-modal';
+import MidDot from '@/components/general/mid-dot';
+import Avatar from '@/components/general/avatar';
 
-import { PropertyListingData } from '@/app/interfaces';
+import { PropertyListingData } from '@/lib/types';
 
 interface ListingClientProps {
     listing: PropertyListingData;
@@ -122,7 +122,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
                                         <h2 className="text-2xl font-semibold">About this place</h2>
                                     </div>
                                     <div className="leading-relaxed">
-                                        <ContentWithBoldAndLineBreaks content={description} />
+                                        <DescriptionBreaker content={description} />
                                     </div>
                                 </div>
 

@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
-import { IMG_APP_LOGO } from '@/app/helpers/ImageHelper';
+import { IMG_APP_LOGO } from '@/lib/data';
 
 const Logo = () => {
     const router = useRouter();

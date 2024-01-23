@@ -1,7 +1,7 @@
-import EmptyState from "@/app/components/common/EmptyState";
-import listings from '@/app/static/listings.json';
+import EmptyState from "@/components/general/empty-state";
+import listings from '@/static/listings.json';
 
-import ListingClient from "./ListingClient";
+import ListingClient from "./listing-client";
 
 interface IParams {
     listingId?: string;

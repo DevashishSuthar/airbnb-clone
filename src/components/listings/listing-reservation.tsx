@@ -2,7 +2,7 @@
 
 import { AiFillStar, AiOutlineDown } from 'react-icons/ai';
 
-import MidDot from '@/app/components/common/MidDot';
+import MidDot from '@/components/general/mid-dot';
 
 interface ListingReservationProps {
     currencySymbol: string,

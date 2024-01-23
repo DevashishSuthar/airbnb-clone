@@ -6,8 +6,8 @@ import { BiSearch } from 'react-icons/bi';
 import { useDetectClickOutside } from 'react-detect-click-outside';
 
 import { AppContext } from '@/app/AppContext';
-import GuestForm from '@/app/components/GuestsForm';
-import DatePickerModal from '@/app/components/DatePickerModal';
+import GuestForm from '@/components/guests-form';
+import DatePickerModal from '@/components/date-picker-modal';
 
 const Search = () => {
   const params = useSearchParams();

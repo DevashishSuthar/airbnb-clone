@@ -1,13 +1,14 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { AiFillStar } from 'react-icons/ai';
 import { useContext } from 'react';
 
-import HeartButton from '@/app/components/common/HeartButton';
-import { PropertyListingData } from '@/app/interfaces';
-import { getUserRatings } from '@/app/utils/CommonUtils';
+import HeartButton from '@/components/general/heart-button';
+import { PropertyListingData } from '@/lib/types';
+import { getUserRatings } from '@/lib/utils';
 import { AppContext } from '@/app/AppContext';
 
 interface ListingCardProps {
@@ -22,8 +23,9 @@ const ListingCard: React.FC<ListingCardProps> = ({ data, listIndex }) => {
     const { location: searchLocation } = useContext(AppContext);
 
     return (
-        <div
-            onClick={() => router.push(`/listings/${id}`)}
+        <Link
+            // onClick={() => router.push(`/listings/${id}`)}
+            href={`/listings/${id}`}
             className="col-span-1 cursor-pointer group mb-12"
             key={listIndex}
         >
@@ -63,7 +65,7 @@ const ListingCard: React.FC<ListingCardProps> = ({ data, listIndex }) => {
                     <div className="font-light">night</div>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
 
