@@ -4,6 +4,7 @@ import Logo from './logo';
 import Search from './search';
 import UserMenu from './user-menu';
 import Filters from './filters';
+import { Suspense } from 'react';
 
 const Navbar: React.FC = () => {
   return (
@@ -12,14 +13,18 @@ const Navbar: React.FC = () => {
         <Container>
           <div className="flex items-center justify-between">
             <Logo />
-            <Search />
+            <Suspense>
+              <Search />
+            </Suspense>
             <UserMenu />
           </div>
         </Container>
       </div>
       <Container>
         <div className="flex items-center justify-between">
-          <Categories />
+          <Suspense>
+            <Categories />
+          </Suspense>
           <Filters />
         </div>
       </Container>
