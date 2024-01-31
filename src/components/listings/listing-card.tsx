@@ -23,9 +23,8 @@ const ListingCard: React.FC<ListingCardProps> = ({ data, listIndex }) => {
     const { location: searchLocation } = useContext(AppContext);
 
     return (
-        <Link
-            // onClick={() => router.push(`/listings/${id}`)}
-            href={`/listings/${id}`}
+        <div
+            onClick={() => router.push(`/listings/${id}`)}
             className="col-span-1 cursor-pointer group mb-12"
             key={listIndex}
         >
@@ -65,7 +64,7 @@ const ListingCard: React.FC<ListingCardProps> = ({ data, listIndex }) => {
                     <div className="font-light">night</div>
                 </div>
             </div>
-        </Link>
+        </div>
     );
 };
 
